@@ -1,0 +1,74 @@
+///////////////////////////////////////////////////////////////////////
+//                          Unity3D Setup                            //
+///////////////////////////////////////////////////////////////////////
+
+1. For Vuforia AR SDK, we can just use 32bits Editor if we are on PC, because Vuforia does NOT support 64bits Unity Editor. Note: on Mac, NO this problem.
+   - download Unity Editor from: http://unity3d.com/get-unity/download/archive
+   - download the unity editor and installer
+     + use installer to download separately playback engine: iOS support, Android support and Window Store support
+
+2. For Android Platform, we need Android SDK:
+   - just download the common line tools from here:
+   - after download the SDK, on PC, open download manager and grab down Android 6.0 API
+   http://developer.android.com/sdk/index.html
+   - potentially we also need JDK:
+   http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+3. Register a Vuforia Dev Accout:
+   - access https://developer.vuforia.com/
+   - register one Starter Account
+
+4. Change the autogenrated code template within Unity3D
+   - Open
+   PC 32bits Unity3D: C:\Program Files (x86)\Unity\Editor\Data\Resources\ScriptTemplates
+   PC 64bits Unity3D: C:\Program Files\Unity\Editor\Data\Resources\ScriptTemplates
+   Mac       Unity3D: /Applications/Unity/Unity.app/Contents/Resources/ScriptTemplates/
+   
+   - Paste the following contents into: 81-C# Script-NewBehaviourScript.cs.txt
+   
+using UnityEngine;
+using System.Collections;
+
+public class #SCRIPTNAME# : MonoBehaviour
+{
+  // PRIVATE ----------
+  /**
+   * Awake() will be called when the script is initialized before game starts
+   * Awake() will be called only once during the lifetime of the script instance
+   * Awake() will be called after all objects are initialized
+   * Awake() will be called out of order: in random order
+   */
+  void Awake()
+  {
+  
+  }
+  
+  /**
+   * Start() will be called when the script is ENABLED
+   * Start() will be called exactly once in the lifetime of the script
+   */
+  void Start()
+  {
+
+  }
+
+  /**
+   * Update() will be called every frame, if the script is ENBALED
+   * use Time.deltaTime to get the time elapsed from last Update() call
+   */
+  void Update()
+  {
+
+  }
+  
+  /**
+   * LateUpdate() will be called after ALL Update() functions called
+   */
+  void LateUpdate()
+  {
+  
+  }
+}
+
+  
+   

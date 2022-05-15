@@ -1,0 +1,78 @@
+{
+   "MonsterLevelList":
+  [
+    {
+      "Level": 1,
+      "MonsterList":
+      [
+        "GhostLevel1",
+        "GhostLevel2",
+        "BatLevel1"
+      ]
+    },
+    {
+      "Level": 2,
+      "MonsterList":
+      [
+        "GhostLevel3",
+        "BatLevel2",
+        "BatLevel3",
+        "SkeletonArcherLevel1"
+      ]
+    },
+    {
+      "Level": 3,
+      "MonsterList":
+      [
+        "SkeletonArcherLevel2",
+        "SkeletonArcherLevel3",
+        "SkeletonKnightLevel1",
+        "DeathKnightLevel1",
+        "DeathKnightLevel2"
+      ]
+    },
+    {
+      "Level": 4,
+      "MonsterList":
+      [
+        "DeathKnightLevel3"
+      ]
+    }
+  ],
+  "BossLevelList":
+  [
+    {
+      "Level": 1,
+      "MonsterList":
+      [
+        "CactusLevel1",
+        "PlantLevel1"
+      ]
+    },
+    {
+      "Level": 2,
+      "MonsterList":
+      [
+        "PlantLevel2",
+        "RockGolemLevel1",
+        "RockGolemLevel2"
+      ]
+    },
+    {
+      "Level": 3,
+      "MonsterList":
+      [
+        "RockGolemLevel3",
+        "DragonLevel1"
+      ]
+    },
+    {
+      "Level": 4,
+      "MonsterList":
+      [
+        "DragonLevel2",
+        "DragonLevel3"
+      ]
+    }
+  ]
+}

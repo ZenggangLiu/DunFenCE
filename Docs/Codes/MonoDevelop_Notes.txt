@@ -1,0 +1,8 @@
+///////////////////////////////////////////////////////////////////////
+//                         MonoDevelop Notes                         //
+///////////////////////////////////////////////////////////////////////
+
+1. How to show the White Space and Return Characters:
+   - Go to "Text Editor -> Marker and Rulers -> Show invisible characters" option, 
+   - Select "Selection"
+

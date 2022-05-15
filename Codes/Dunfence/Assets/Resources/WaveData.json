@@ -1,0 +1,622 @@
+{
+  "LevelList": [
+    {
+      "LevelName": "DemoScene",
+      "MonsterFlag": 12,
+      "TelePort": 32,
+      "MaxAllowedMonsterCount": 5,
+      "WaveInfoList": [
+        {
+          "WaveLength": 200,
+          "BossChargeTime": 45,
+          "BossIDList": [
+            36,
+            56
+          ],
+          "MonsterCount": 2,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 2,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            80,
+            88
+          ]
+        },
+        {
+          "WaveLength": 200,
+          "BossChargeTime": 120,
+          "BossIDList": [
+            36,
+            56
+          ],
+          "MonsterCount": 2,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 2,
+          "MonsterRechargeDelay": 1.5,
+          "MonsterIDList": [
+            80,
+            88,
+            112
+          ]
+        },
+        {
+          "WaveLength": 200,
+          "BossChargeTime": 120,
+          "BossIDList": [
+            36,
+            56
+          ],
+          "MonsterCount": 2,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 2,
+          "MonsterRechargeDelay": 1.5,
+          "MonsterIDList": [
+            80,
+            88,
+            112
+          ]
+        }
+      ]
+    },
+    {
+      "LevelName": "FarmSummer-SunRise",
+      "MonsterFlag": 12,
+      "TelePort": 32,
+      "MaxAllowedMonsterCount": 6,
+      "WaveInfoList": [
+        {
+          "WaveLength": 30,
+          "BossChargeTime": 25,
+          "BossIDList": [
+            36
+          ],
+          "MonsterCount": 1,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 1,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            96,
+            72
+          ]
+        },
+        {
+          "WaveLength": 30,
+          "BossChargeTime": 25,
+          "BossIDList": [
+            36,
+            52
+          ],
+          "MonsterCount": 2,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 2,
+          "MonsterRechargeDelay": 1.5,
+          "MonsterIDList": [
+            96,
+            72,
+            108
+          ]
+        },
+        {
+          "WaveLength": 40,
+          "BossChargeTime": 35,
+          "BossIDList": [
+            60,
+            52
+          ],
+          "MonsterCount": 2,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 2,
+          "MonsterRechargeDelay": 1.5,
+          "MonsterIDList": [
+            96,
+            72,
+            108,
+            80
+          ]
+        },
+        {
+          "WaveLength": 40,
+          "BossChargeTime": 35,
+          "BossIDList": [
+            60,
+            52
+          ],
+          "MonsterCount": 3,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 2,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            108,
+            80
+          ]
+        },
+        {
+          "WaveLength": 60,
+          "BossChargeTime": 55,
+          "BossIDList": [
+            60
+          ],
+          "MonsterCount": 3,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 3,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            108,
+            80
+          ]
+        },
+        {
+          "WaveLength": 60,
+          "BossChargeTime": 55,
+          "BossIDList": [
+            60
+          ],
+          "MonsterCount": 3,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 3,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            120,
+            84
+          ]
+        }
+      ]
+    },
+    {
+      "LevelName": "FarmWinter-SunRise",
+      "MonsterFlag": 12,
+      "TelePort": 32,
+      "MaxAllowedMonsterCount": 8,
+      "WaveInfoList": [
+        {
+          "WaveLength": 20,
+          "BossChargeTime": 15,
+          "BossIDList": [
+            52
+          ],
+          "MonsterCount": 3,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 3,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            100
+          ]
+        },
+        {
+          "WaveLength": 30,
+          "BossChargeTime": 20,
+          "BossIDList": [
+            52
+          ],
+          "MonsterCount": 6,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 4,
+          "MonsterRechargeDelay": 1.5,
+          "MonsterIDList": [
+            100,
+            76,
+            80
+          ]
+        },
+        {
+          "WaveLength": 40,
+          "BossChargeTime": 30,
+          "BossIDList": [
+            52
+          ],
+          "MonsterCount": 6,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 6,
+          "MonsterRechargeDelay": 1.5,
+          "MonsterIDList": [
+            100,
+            76,
+            80
+          ]
+        },
+        {
+          "WaveLength": 40,
+          "BossChargeTime": 35,
+          "BossIDList": [
+            56,
+            52,
+            60
+          ],
+          "MonsterCount": 8,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 6,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            100,
+            76,
+            80,
+            112,
+            116,
+            120,
+            88
+          ]
+        },
+        {
+          "WaveLength": 60,
+          "BossChargeTime": 45,
+          "BossIDList": [
+            52,
+            60
+          ],
+          "MonsterCount": 10,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 8,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            112,
+            116,
+            120,
+            88
+          ]
+        },
+        {
+          "WaveLength": 60,
+          "BossChargeTime": 50,
+          "BossIDList": [
+            60
+          ],
+          "MonsterCount": 10,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 8,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            120,
+            88
+          ]
+        }
+      ]
+    },
+    {
+      "LevelName": "RobotFactory-SunRise",
+      "MonsterFlag": 12,
+      "TelePort": 32,
+      "MaxAllowedMonsterCount": 10,
+      "WaveInfoList": [
+        {
+          "WaveLength": 20,
+          "BossChargeTime": 15,
+          "BossIDList": [
+            52
+          ],
+          "MonsterCount": 3,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 3,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            100
+          ]
+        },
+        {
+          "WaveLength": 30,
+          "BossChargeTime": 20,
+          "BossIDList": [
+            52
+          ],
+          "MonsterCount": 6,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 4,
+          "MonsterRechargeDelay": 1.5,
+          "MonsterIDList": [
+            100,
+            76,
+            80
+          ]
+        },
+        {
+          "WaveLength": 40,
+          "BossChargeTime": 30,
+          "BossIDList": [
+            52
+          ],
+          "MonsterCount": 6,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 6,
+          "MonsterRechargeDelay": 1.5,
+          "MonsterIDList": [
+            100,
+            76,
+            80
+          ]
+        },
+        {
+          "WaveLength": 40,
+          "BossChargeTime": 35,
+          "BossIDList": [
+            56,
+            52,
+            60
+          ],
+          "MonsterCount": 8,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 6,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            100,
+            76,
+            80,
+            112,
+            116,
+            120,
+            88
+          ]
+        },
+        {
+          "WaveLength": 60,
+          "BossChargeTime": 45,
+          "BossIDList": [
+            52,
+            60
+          ],
+          "MonsterCount": 10,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 8,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            112,
+            116,
+            120,
+            88
+          ]
+        },
+        {
+          "WaveLength": 60,
+          "BossChargeTime": 50,
+          "BossIDList": [
+            60
+          ],
+          "MonsterCount": 10,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 8,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            120,
+            88
+          ]
+        },
+        {
+          "WaveLength": 90,
+          "BossChargeTime": 60,
+          "BossIDList": [
+            60
+          ],
+          "MonsterCount": 10,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 10,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            120,
+            88
+          ]
+        }
+      ]
+    },
+    {
+      "LevelName": "FarmSummer-SunSet",
+      "MonsterFlag": 12,
+      "TelePort": 32,
+      "MaxAllowedMonsterCount": 8,
+      "WaveInfoList": [
+        {
+          "WaveLength": 30,
+          "BossChargeTime": 25,
+          "BossIDList": [
+            36
+          ],
+          "MonsterCount": 1,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 1,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            96,
+            72
+          ]
+        },
+        {
+          "WaveLength": 30,
+          "BossChargeTime": 25,
+          "BossIDList": [
+            36,
+            52
+          ],
+          "MonsterCount": 2,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 2,
+          "MonsterRechargeDelay": 1.5,
+          "MonsterIDList": [
+            96,
+            72,
+            108
+          ]
+        },
+        {
+          "WaveLength": 40,
+          "BossChargeTime": 35,
+          "BossIDList": [
+            60,
+            52
+          ],
+          "MonsterCount": 2,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 2,
+          "MonsterRechargeDelay": 1.5,
+          "MonsterIDList": [
+            96,
+            72,
+            108,
+            80
+          ]
+        },
+        {
+          "WaveLength": 40,
+          "BossChargeTime": 35,
+          "BossIDList": [
+            60,
+            52
+          ],
+          "MonsterCount": 3,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 2,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            108,
+            80
+          ]
+        },
+        {
+          "WaveLength": 60,
+          "BossChargeTime": 55,
+          "BossIDList": [
+            60
+          ],
+          "MonsterCount": 3,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 3,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            108,
+            80
+          ]
+        },
+        {
+          "WaveLength": 60,
+          "BossChargeTime": 55,
+          "BossIDList": [
+            60
+          ],
+          "MonsterCount": 3,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 3,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            120,
+            84
+          ]
+        },
+        {
+          "WaveLength": 90,
+          "BossChargeTime": 80,
+          "BossIDList": [
+            60
+          ],
+          "MonsterCount": 4,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 4,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            120,
+            84
+          ]
+        }
+      ]
+    },
+    {
+      "LevelName": "FarmSummer-Night",
+      "MonsterFlag": 12,
+      "TelePort": 32,
+      "MaxAllowedMonsterCount": 10,
+      "WaveInfoList": [
+        {
+          "WaveLength": 30,
+          "BossChargeTime": 25,
+          "BossIDList": [
+            36
+          ],
+          "MonsterCount": 1,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 1,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            96,
+            72
+          ]
+        },
+        {
+          "WaveLength": 30,
+          "BossChargeTime": 25,
+          "BossIDList": [
+            36,
+            52
+          ],
+          "MonsterCount": 2,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 2,
+          "MonsterRechargeDelay": 1.5,
+          "MonsterIDList": [
+            96,
+            72,
+            108
+          ]
+        },
+        {
+          "WaveLength": 40,
+          "BossChargeTime": 35,
+          "BossIDList": [
+            60,
+            52
+          ],
+          "MonsterCount": 2,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 2,
+          "MonsterRechargeDelay": 1.5,
+          "MonsterIDList": [
+            96,
+            72,
+            108,
+            80
+          ]
+        },
+        {
+          "WaveLength": 40,
+          "BossChargeTime": 35,
+          "BossIDList": [
+            60,
+            52
+          ],
+          "MonsterCount": 3,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 2,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            108,
+            80
+          ]
+        },
+        {
+          "WaveLength": 60,
+          "BossChargeTime": 55,
+          "BossIDList": [
+            60
+          ],
+          "MonsterCount": 3,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 3,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            108,
+            80
+          ]
+        },
+        {
+          "WaveLength": 60,
+          "BossChargeTime": 55,
+          "BossIDList": [
+            60
+          ],
+          "MonsterCount": 3,
+          "MonsterChargeTime": 0,
+          "MonsterChargeCount": 3,
+          "MonsterRechargeDelay": 1,
+          "MonsterIDList": [
+            120,
+            84
+          ]
+        }
+      ]
+    }
+  ]
+}

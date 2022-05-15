@@ -1,0 +1,404 @@
+{
+  "AssetList": [
+    {
+      "ID": 4,
+      "Path": "PreFabs/Buildings/BakerHouseSummer"
+    },
+    {
+      "ID": 8,
+      "Path": "PreFabs/Buildings/BakerHouseWinter"
+    },
+    {
+      "ID": 12,
+      "Path": "PreFabs/Buildings/BannerA"
+    },
+    {
+      "ID": 16,
+      "Path": "PreFabs/Buildings/BattleFieldSummer"
+    },
+    {
+      "ID": 20,
+      "Path": "PreFabs/Buildings/BattleFieldWinter"
+    },
+    {
+      "ID": 24,
+      "Path": "PreFabs/Buildings/MillSummer"
+    },
+    {
+      "ID": 28,
+      "Path": "PreFabs/Buildings/MillWinter"
+    },
+    {
+      "ID": 32,
+      "Path": "PreFabs/Buildings/TelePort"
+    },
+    {
+      "ID": 36,
+      "Path": "PreFabs/Characters/Bosses/CactusLevel1"
+    },
+    {
+      "ID": 40,
+      "Path": "PreFabs/Characters/Bosses/DragonLevel1"
+    },
+    {
+      "ID": 44,
+      "Path": "PreFabs/Characters/Bosses/DragonLevel2"
+    },
+    {
+      "ID": 48,
+      "Path": "PreFabs/Characters/Bosses/DragonLevel3"
+    },
+    {
+      "ID": 52,
+      "Path": "PreFabs/Characters/Bosses/PlantLevel1"
+    },
+    {
+      "ID": 56,
+      "Path": "PreFabs/Characters/Bosses/PlantLevel2"
+    },
+    {
+      "ID": 60,
+      "Path": "PreFabs/Characters/Bosses/RockGolemLevel1"
+    },
+    {
+      "ID": 64,
+      "Path": "PreFabs/Characters/Bosses/RockGolemLevel2"
+    },
+    {
+      "ID": 68,
+      "Path": "PreFabs/Characters/Bosses/RockGolemLevel3"
+    },
+    {
+      "ID": 72,
+      "Path": "PreFabs/Characters/Monster/BatLevel1"
+    },
+    {
+      "ID": 76,
+      "Path": "PreFabs/Characters/Monster/BatLevel2"
+    },
+    {
+      "ID": 80,
+      "Path": "PreFabs/Characters/Monster/BatLevel3"
+    },
+    {
+      "ID": 84,
+      "Path": "PreFabs/Characters/Monster/DeathKnightLevel1"
+    },
+    {
+      "ID": 88,
+      "Path": "PreFabs/Characters/Monster/DeathKnightLevel2"
+    },
+    {
+      "ID": 92,
+      "Path": "PreFabs/Characters/Monster/DeathKnightLevel3"
+    },
+    {
+      "ID": 96,
+      "Path": "PreFabs/Characters/Monster/GhostLevel1"
+    },
+    {
+      "ID": 100,
+      "Path": "PreFabs/Characters/Monster/GhostLevel2"
+    },
+    {
+      "ID": 104,
+      "Path": "PreFabs/Characters/Monster/GhostLevel3"
+    },
+    {
+      "ID": 108,
+      "Path": "PreFabs/Characters/Monster/SkeletonArcherLevel1"
+    },
+    {
+      "ID": 112,
+      "Path": "PreFabs/Characters/Monster/SkeletonArcherLevel2"
+    },
+    {
+      "ID": 116,
+      "Path": "PreFabs/Characters/Monster/SkeletonArcherLevel3"
+    },
+    {
+      "ID": 120,
+      "Path": "PreFabs/Characters/Monster/SkeletonKnightLevel1"
+    },
+    {
+      "ID": 124,
+      "Path": "PreFabs/Effects/AuraFx"
+    },
+    {
+      "ID": 128,
+      "Path": "PreFabs/Effects/BreathAquaFx"
+    },
+    {
+      "ID": 132,
+      "Path": "PreFabs/Effects/BreathYellowFx"
+    },
+    {
+      "ID": 136,
+      "Path": "PreFabs/Effects/FireBreathFx"
+    },
+    {
+      "ID": 140,
+      "Path": "PreFabs/Effects/FireFx"
+    },
+    {
+      "ID": 144,
+      "Path": "PreFabs/Effects/FireProjectileFx"
+    },
+    {
+      "ID": 148,
+      "Path": "PreFabs/Effects/IceBreathFx"
+    },
+    {
+      "ID": 152,
+      "Path": "PreFabs/Effects/IceProjectileFx"
+    },
+    {
+      "ID": 156,
+      "Path": "PreFabs/Effects/PoisonBreathFx"
+    },
+    {
+      "ID": 160,
+      "Path": "PreFabs/Effects/PoisonProjectileFx"
+    },
+    {
+      "ID": 164,
+      "Path": "PreFabs/Effects/RainFx"
+    },
+    {
+      "ID": 168,
+      "Path": "PreFabs/Effects/ShootingFx"
+    },
+    {
+      "ID": 172,
+      "Path": "PreFabs/Effects/SnowFx"
+    },
+    {
+      "ID": 176,
+      "Path": "PreFabs/Props/Chest"
+    },
+    {
+      "ID": 180,
+      "Path": "PreFabs/Props/Coin"
+    },
+    {
+      "ID": 184,
+      "Path": "PreFabs/Props/HealthHeart"
+    },
+    {
+      "ID": 188,
+      "Path": "PreFabs/Props/HealthStar"
+    },
+    {
+      "ID": 192,
+      "Path": "PreFabs/Props/MagicBottleA"
+    },
+    {
+      "ID": 196,
+      "Path": "PreFabs/Props/MagicCrystalA"
+    },
+    {
+      "ID": 200,
+      "Path": "PreFabs/Props/RewardHeart"
+    },
+    {
+      "ID": 204,
+      "Path": "PreFabs/Props/RewardStar"
+    },
+    {
+      "ID": 208,
+      "Path": "PreFabs/Weapons/ArrowLevel1"
+    },
+    {
+      "ID": 212,
+      "Path": "PreFabs/Weapons/Axe1Level1"
+    },
+    {
+      "ID": 216,
+      "Path": "PreFabs/Weapons/Axe1Level2"
+    },
+    {
+      "ID": 220,
+      "Path": "PreFabs/Weapons/Axe2Level2"
+    },
+    {
+      "ID": 224,
+      "Path": "PreFabs/Weapons/Axe3Level2"
+    },
+    {
+      "ID": 228,
+      "Path": "PreFabs/Weapons/Dart7Level1"
+    },
+    {
+      "ID": 232,
+      "Path": "PreFabs/Weapons/Dart1Level1"
+    },
+    {
+      "ID": 236,
+      "Path": "PreFabs/Weapons/Dart2Level4"
+    },
+    {
+      "ID": 240,
+      "Path": "PreFabs/Weapons/Dart3Level4"
+    },
+    {
+      "ID": 244,
+      "Path": "PreFabs/Weapons/Dart4Level1"
+    },
+    {
+      "ID": 248,
+      "Path": "PreFabs/Weapons/Dart5Level1"
+    },
+    {
+      "ID": 252,
+      "Path": "PreFabs/Weapons/Dart5Level2"
+    },
+    {
+      "ID": 256,
+      "Path": "PreFabs/Weapons/Dart6Level2"
+    },
+    {
+      "ID": 260,
+      "Path": "PreFabs/Weapons/Bullet"
+    },
+    {
+      "ID": 264,
+      "Path": "PreFabs/Weapons/PlayerThrownWeapon"
+    },
+    {
+      "ID": 268,
+      "Path": "PreFabs/Weapons/Dart7Level2"
+    },
+    {
+      "ID": 272,
+      "Path": "PreFabs/Weapons/Knife1Level3"
+    },
+    {
+      "ID": 276,
+      "Path": "PreFabs/Weapons/Knife2Level3"
+    },
+    {
+      "ID": 280,
+      "Path": "PreFabs/Weapons/Knife4Level2"
+    },
+    {
+      "ID": 284,
+      "Path": "PreFabs/Weapons/MachineGun"
+    },
+    {
+      "ID": 288,
+      "Path": "PreFabs/Weapons/Dart3Level3"
+    },
+    {
+      "ID": 292,
+      "Path": "PreFabs/Effects/WeaponHitMonsterFx"
+    },
+    {
+      "ID": 296,
+      "Path": "PreFabs/Effects/WeaponHitBuildingFx"
+    },
+    {
+      "ID": 300,
+      "Path": "PreFabs/Effects/WeaponHitGroundFx"
+    },
+    {
+      "ID": 304,
+      "Path": "PreFabs/GUI/HPPanel"
+    },
+    {
+      "ID": 308,
+      "Path": "PreFabs/Weapons/Pistol"
+    },
+    {
+      "ID": 312,
+      "Path": "PreFabs/Weapons/Revolver"
+    },
+    {
+      "ID": 316,
+      "Path": "PreFabs/Weapons/ShootGunBullet"
+    },
+    {
+      "ID": 320,
+      "Path": "PreFabs/Weapons/ShotGun"
+    },
+    {
+      "ID": 324,
+      "Path": "PreFabs/Weapons/ArrowLevel2"
+    },
+    {
+      "ID": 328,
+      "Path": "PreFabs/Weapons/ArrowLevel3"
+    },
+    {
+      "ID": 332,
+      "Path": "PreFabs/GUI/BuildingHPPanel"
+    },
+    {
+      "ID": 336,
+      "Path": "PreFabs/Weapons/FireBall"
+    },
+    {
+      "ID": 340,
+      "Path": "PreFabs/Weapons/Barrel"
+    },
+    {
+      "ID": 344,
+      "Path": "PreFabs/Weapons/BoxLevel1"
+    },
+    {
+      "ID": 348,
+      "Path": "PreFabs/Weapons/BoxLevel2"
+    },
+    {
+      "ID": 352,
+      "Path": "PreFabs/Weapons/RockLevel1"
+    },
+    {
+      "ID": 356,
+      "Path": "PreFabs/Weapons/RockLevel2"
+    },
+    {
+      "ID": 360,
+      "Path": "PreFabs/Weapons/BowTowerArrow"
+    },
+    {
+      "ID": 364,
+      "Path": "PreFabs/Weapons/HeroArrowLevel1"
+    },
+    {
+      "ID": 368,
+      "Path": "PreFabs/Weapons/HeroArrowLevel2"
+    },
+    {
+      "ID": 372,
+      "Path": "PreFabs/Weapons/CannonShell"
+    },
+    {
+      "ID": 376,
+      "Path": "PreFabs/GUI/TowerTimerPanel"
+    },
+    {
+      "ID": 380,
+      "Path": "PreFabs/Weapons/MortarShell"
+    },
+    {
+      "ID": 384,
+      "Path": "PreFabs/Effects/MortarShellExplosionFx"
+    },
+    {
+      "ID": 388,
+      "Path": "PreFabs/Weapons/RevolverBullet"
+    },
+    {
+      "ID": 392,
+      "Path": "PreFabs/GUI/WeaponSlot"
+    },
+    {
+      "ID": 396,
+      "Path": "PreFabs/ARScene"
+    },
+    {
+      "ID": 400,
+      "Path": "PreFabs/NormScene"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+///////////////////////////////////////////////////////////////////////
+//                Coding Convention FOR C++ and C#                   //
+///////////////////////////////////////////////////////////////////////
+
+- Comments:
+ + use // for single line comment 
+   or  /** ... */ for multi-line comment. it is good for Doxygen
+ + use the following predefined comment types 
+   # todo: // TODO: 
+   # note: // NOTE:
+   # fixme:// FIXME: - similar to TODO but must be fixed before shipping   
+ + use #ifdef instead of /** ... */ to comment out blocks of code
+ 
+- File Names (JUST FOR C++):
+ + C++ source files shall have extension: .cpp
+ + C++ header files shall have extension: .hpp
+ + Inline definition files shall have extension: .inl
+ 
+- Include Files (JUST FOR C++):
+ + System header files shall be included with <> and project headers with "".
+
+- Macros: 
+  + use: #if MACRO_DEFIN == 1 (JUST FOR C++):
+  + NOT: #ifdef MACRO_DEFIN (JUST FOR C++):
+  + in C#, there is just want to use Macros:
+    #define MARCO
+    #if MARCO
+
+- Spacings:
+  + NOT use TAB: convert to 2 blank spaces
+  
+- Variables: 
+  + naming: CamelCase naming: each word follows each other and starts with upper case letter
+    int iIntegerVariableName;
+  + naming decos:
+    # class member variable:
+      @ public variable: starting with Upper Letter, NO Type Prefix
+        in C++
+        class Class
+        {
+         public:
+           int IntegerValuePublicVariable;
+        };
+        
+        or in C#
+        class Class
+        {
+          public int IntegerValuePublicVariable;
+        };
+      @ protected/private variable: starting with m_ and Type Prefix: 
+        int m_iIntegerValueProtectedVariable;
+        int m_iIntegerValuePrivateVariable;
+    # function parameter variable: starting with a_ and Type Prefix
+      void func(int a_iIntegerValueAgumentVariable);
+    # local variable: starting with _ and Type Prefix
+      void func(int a_iIntegerValueAgumentVariable)
+      {
+        int _iIntegerValueLocalVariable;   // within a function block 
+      }
+    # global variable: starting with g_ and Type Prefix
+      int g_iIntegerValueGlobalVariable;
+    # variable type prefix:
+      @ int8/byte: i
+      @ int8/char: i
+      @ int16:     i
+      @ int32:     i
+      @ int64:     i
+      @ uint8:     u
+      @ uint16:    u
+      @ uint32:    u
+      @ uint64:    u
+      @ float32:   f
+      @ float64:   ff
+      @ bool:      b
+      @ enum:      e
+      @ pointer:   p (C++ pointer or all C# object reference)
+      @ reference: r (JUST FOR C++)
+      @ c chars:   sz(JUST FOR C++):all C# literal string type
+      @ object:    o
+         ~ string: s
+         ~ array:  a: std::vector
+         ~ linkedlist: ln : std::list (optional)
+         ~ hashtable:  ht : std::map  (optional)
+         // 3D related types
+         ~ vector:          v
+         ~ matrix:          m
+         ~ quaternion:      q
+         ~ dual quaternion: dq
+  + declare each variable in a separate declaration:
+    NOT
+      int iAValue, iBValue;
+    BUT
+    int iAValue;
+    int iBValue;
+
+- If conditions:
+  + even single if or else ALSO must has braces
+    if(xxx)
+    {
+       MACRO_DEF(xxx);
+    }
+
+- Functions:
+  + naming: starting with lower letter: void getSomeValue()   
+  + parameters:
+    # first all parameters providing inputs
+    # second all parameters returning values
+    # at least all parameters having default values
+    # each parameter take one line:
+      void callSomethingWith(int a_iValue,
+                             float a_fValue);
+  + inherited functions with virtual and override(JUST FOR C++)
+  + protected/private functions starting with _
+    in C++
+    class Class
+    {
+     protected:
+      void _callSomethingInProtectedScope();
+    };
+    
+    or in C#
+    class Class
+    {
+     protected void _callSomethingInProtectedScope();
+    };
+    
+- Enums:
+  + each item starting with the enum's name
+    public enum LogLevel
+    {
+        LOGLEVEL_NO_LOGGING_LEVEL       = 0,
+        LOGLEVEL_FATAL_LOGGING_LEVEL    = 1,
+        LOGLEVEL_ERROR_LOGGING_LEVEL    = 2,
+        LOGLEVEL_WARNING_LOGGING_LEVEL  = 3,
+        LOGLEVEL_INFO_LOGGING_LEVEL     = 4,
+        LOGLEVEL_VERBOSE_LOGGING_LEVEL  = 5,
+        LOGLEVEL_DEBUG_LOGGING_LEVEL    = 6,
+        LOGLEVEL_MAX_LOGGING_LEVEL      = LOGLEVEL_DEBUG_LOGGING_LEVEL
+    };
+    
+- Classes:
+  + always define: typedef BaseClass Inherited; (JUST FOR C++)
+  + members declared in the following order:
+    # public func member
+    # public data member
+    # protected func member
+    # protected data member
+    # private func member
+    # private data member
+   class BaseClass
+   {
+     public void publicFunc();
+     protected void _protectedFunc();
+     protected int m_iProtectedVar;  
+   };
+

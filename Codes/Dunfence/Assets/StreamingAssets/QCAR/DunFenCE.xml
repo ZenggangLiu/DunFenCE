@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="10USD_Marker" size="0.135000 0.056719" />
+    <ImageTarget name="10RMB_Marker" size="0.135000 0.069141" />
+    <ImageTarget name="10NZD_Marker" size="0.135000 0.066211" />
+    <ImageTarget name="10EUR_Marker" size="0.135000 0.070430" />
+    <ImageTarget name="LoadingScreen_Marker" size="0.095000 0.059375" />
+    <ImageTarget name="MCCreate_Marker" size="0.055000 0.083524" />
+  </Tracking>
+</QCARConfig>

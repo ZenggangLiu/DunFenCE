@@ -1,0 +1,17 @@
+{
+	"name":"BuckyMinD",
+	"version":"1.0",
+	"description":"Sheme for BuckyMidD",
+	"originator":"Xamarin Inc. (http://xamarin.com)",
+	"baseScheme":"Monokai",
+	"colors":[
+	],
+	"text":[
+		{"name": "Selected Text", "fore":"#FFFFFF", "back":"#0000FF" },
+		{"name": "Comment(Line)", "fore":"#56A649" },
+		{"name": "Comment(Block)", "fore":"#55A649" },
+		{"name": "Comment(Doc)", "fore":"#55A649" },
+		{"name": "Comment(DocTag)", "fore":"#55A649" },
+		{"name": "Comment Tag", "fore":"#55A649" }
+	]
+}

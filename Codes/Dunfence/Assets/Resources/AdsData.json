@@ -1,0 +1,27 @@
+{
+  "TestDeviceList": [
+    "1C546D4B0866632471F7C345FFF1EF0B"
+  ],
+  "UnityAds": {
+    "Enabled": true,
+    "IncentivizeVideoName": "rewardedVideo",
+    "InterstitialVideoName": "video"
+  },
+  "GoogleAds": {
+    "Banner": {
+      "Enabled": true,
+      "AndroidUID": "ca-app-pub-2027166214342144/2486205314",
+      "iOSUID": "ca-app-pub-2027166214342144/1264994110"
+    },
+    "Interstitial": {
+      "Enabled": true,
+      "AndroidUID": "ca-app-pub-2027166214342144/7649604917",
+      "iOSUID": "ca-app-pub-2027166214342144/2741727317"
+    },
+    "IncentivizeVideo": {
+      "Enabled": true,
+      "AndroidUID": "ca-app-pub-2027166214342144/3219405318",
+      "iOSUID": "ca-app-pub-2027166214342144/5695193719"
+    }
+  }
+}

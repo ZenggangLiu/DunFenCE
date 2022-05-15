@@ -1,0 +1,336 @@
+{
+  "WeaponList": [
+    {
+      "UID": 4,
+      "IsShootWeapon": true,
+      "IconName": "Barrel",
+      "WeaponID": 264,
+      "ProjectileID": 340,
+      "Price": 0,
+      "Damage": 2,
+      "ShootRate": 2
+    },
+    {
+      "UID": 14,
+      "IsShootWeapon": true,
+      "IconName": "BoxLevel1",
+      "WeaponID": 264,
+      "ProjectileID": 344,
+      "Price": 0,
+      "Damage": 3,
+      "ShootRate": 2
+    },
+    {
+      "UID": 24,
+      "IsShootWeapon": true,
+      "IconName": "RockLevel1",
+      "WeaponID": 264,
+      "ProjectileID": 352,
+      "Price": 0,
+      "Damage": 4,
+      "ShootRate": 2
+    },
+    {
+      "UID": 34,
+      "IsShootWeapon": true,
+      "IconName": "BoxLevel2",
+      "WeaponID": 264,
+      "ProjectileID": 348,
+      "Price": 0,
+      "Damage": 4,
+      "ShootRate": 2
+    },
+    {
+      "UID": 44,
+      "IsShootWeapon": true,
+      "IconName": "RockLevel2",
+      "WeaponID": 264,
+      "ProjectileID": 356,
+      "Price": 0,
+      "Damage": 5,
+      "ShootRate": 2
+    },
+    {
+      "UID": 54,
+      "IsShootWeapon": true,
+      "IconName": "Axe1Level1",
+      "WeaponID": 264,
+      "ProjectileID": 212,
+      "Price": 0,
+      "Damage": 5,
+      "ShootRate": 2
+    },
+    {
+      "UID": 64,
+      "IsShootWeapon": true,
+      "IconName": "Dart1Level1",
+      "WeaponID": 264,
+      "ProjectileID": 232,
+      "Price": 0,
+      "Damage": 5,
+      "ShootRate": 2
+    },
+    {
+      "UID": 74,
+      "IsShootWeapon": true,
+      "IconName": "Revolver",
+      "WeaponID": 312,
+      "ProjectileID": -1,
+      "Price": 0,
+      "Damage": 10,
+      "ShootRate": 2
+    },
+    {
+      "UID": 84,
+      "IsShootWeapon": true,
+      "IconName": "Dart2Level4",
+      "WeaponID": 264,
+      "ProjectileID": 236,
+      "Price": 1,
+      "Damage": 8,
+      "ShootRate": 2
+    },
+    {
+      "UID": 94,
+      "IsShootWeapon": true,
+      "IconName": "Axe2Level2",
+      "WeaponID": 264,
+      "ProjectileID": 220,
+      "Price": 6,
+      "Damage": 15,
+      "ShootRate": 2
+    },
+    {
+      "UID": 104,
+      "IsShootWeapon": true,
+      "IconName": "Axe3Level2",
+      "WeaponID": 264,
+      "ProjectileID": 224,
+      "Price": 8,
+      "Damage": 20,
+      "ShootRate": 2
+    },
+    {
+      "UID": 114,
+      "IsShootWeapon": true,
+      "IconName": "Dart4Level1",
+      "WeaponID": 264,
+      "ProjectileID": 244,
+      "Price": 8,
+      "Damage": 20,
+      "ShootRate": 2
+    },
+    {
+      "UID": 124,
+      "IsShootWeapon": true,
+      "IconName": "Dart5Level1",
+      "WeaponID": 264,
+      "ProjectileID": 248,
+      "Price": 8,
+      "Damage": 20,
+      "ShootRate": 2
+    },
+    {
+      "UID": 134,
+      "IsShootWeapon": true,
+      "IconName": "Dart7Level1",
+      "WeaponID": 264,
+      "ProjectileID": 228,
+      "Price": 8,
+      "Damage": 20,
+      "ShootRate": 2
+    },
+    {
+      "UID": 144,
+      "IsShootWeapon": true,
+      "IconName": "Dart7Level2",
+      "WeaponID": 264,
+      "ProjectileID": 268,
+      "Price": 12,
+      "Damage": 25,
+      "ShootRate": 2
+    },
+    {
+      "UID": 154,
+      "IsShootWeapon": true,
+      "IconName": "Axe1Level2",
+      "WeaponID": 264,
+      "ProjectileID": 216,
+      "Price": 12,
+      "Damage": 25,
+      "ShootRate": 2
+    },
+    {
+      "UID": 164,
+      "IsShootWeapon": true,
+      "IconName": "Dart5Level2",
+      "WeaponID": 264,
+      "ProjectileID": 252,
+      "Price": 12,
+      "Damage": 25,
+      "ShootRate": 2
+    },
+    {
+      "UID": 174,
+      "IsShootWeapon": true,
+      "IconName": "Knife4Level2",
+      "WeaponID": 264,
+      "ProjectileID": 280,
+      "Price": 12,
+      "Damage": 25,
+      "ShootRate": 2
+    },
+    {
+      "UID": 184,
+      "IsShootWeapon": true,
+      "IconName": "Dart3Level3",
+      "WeaponID": 264,
+      "ProjectileID": 288,
+      "Price": 12,
+      "Damage": 25,
+      "ShootRate": 2
+    },
+    {
+      "UID": 194,
+      "IsShootWeapon": true,
+      "IconName": "Dart6Level2",
+      "WeaponID": 264,
+      "ProjectileID": 256,
+      "Price": 12,
+      "Damage": 25,
+      "ShootRate": 2
+    },
+    {
+      "UID": 204,
+      "IsShootWeapon": true,
+      "IconName": "MachineGun",
+      "WeaponID": 284,
+      "ProjectileID": -1,
+      "Price": 18,
+      "Damage": 30,
+      "ShootRate": 0.3
+    },
+    {
+      "UID": 214,
+      "IsShootWeapon": true,
+      "IconName": "Dart3Level4",
+      "WeaponID": 264,
+      "ProjectileID": 240,
+      "Price": 18,
+      "Damage": 30,
+      "ShootRate": 2
+    },
+    {
+      "UID": 224,
+      "IsShootWeapon": true,
+      "IconName": "Knife2Level3",
+      "WeaponID": 264,
+      "ProjectileID": 276,
+      "Price": 18,
+      "Damage": 30,
+      "ShootRate": 2
+    },
+    {
+      "UID": 234,
+      "IsShootWeapon": true,
+      "IconName": "Knife1Level3",
+      "WeaponID": 264,
+      "ProjectileID": 272,
+      "Price": 18,
+      "Damage": 30,
+      "ShootRate": 2
+    },
+    {
+      "UID": 244,
+      "IsShootWeapon": true,
+      "IconName": "Pistol",
+      "WeaponID": 308,
+      "ProjectileID": -1,
+      "Price": 18,
+      "Damage": 30,
+      "ShootRate": 1
+    },
+    {
+      "UID": 254,
+      "IsShootWeapon": true,
+      "IconName": "ShootGun",
+      "WeaponID": 320,
+      "ProjectileID": -1,
+      "Price": 26,
+      "Damage": 45,
+      "ShootRate": 1
+    },
+    {
+      "UID": 264,
+      "IsShootWeapon": false,
+      "Damage": 5,
+      "FlySpeed": 0.5
+    },
+    {
+      "UID": 270,
+      "IsShootWeapon": false,
+      "Damage": 10,
+      "FlySpeed": 0.5
+    },
+    {
+      "UID": 276,
+      "IsShootWeapon": false,
+      "Damage": 15,
+      "FlySpeed": 0.5
+    },
+    {
+      "UID": 282,
+      "IsShootWeapon": false,
+      "Damage": 30,
+      "FlySpeed": 0.8
+    },
+    {
+      "UID": 288,
+      "IsShootWeapon": false,
+      "Damage": 20,
+      "FlySpeed": 5
+    },
+    {
+      "UID": 294,
+      "IsShootWeapon": false,
+      "Damage": 30,
+      "FlySpeed": 1
+    },
+    {
+      "UID": 300,
+      "IsShootWeapon": false,
+      "Damage": 20,
+      "FlySpeed": 0.1
+    },
+    {
+      "UID": 306,
+      "IsShootWeapon": false,
+      "Damage": 15,
+      "FlySpeed": 0
+    },
+    {
+      "UID": 312,
+      "IsShootWeapon": false,
+      "Damage": 10,
+      "FlySpeed": 0.5
+    },
+    {
+      "UID": 318,
+      "IsShootWeapon": false,
+      "Damage": 15,
+      "FlySpeed": 0.5
+    },
+    {
+      "UID": 324,
+      "IsShootWeapon": false,
+      "Damage": 30,
+      "FlySpeed": 0.15
+    },
+    {
+      "UID": 330,
+      "IsShootWeapon": false,
+      "Damage": 40,
+      "FlySpeed": 5
+    }
+  ]
+}

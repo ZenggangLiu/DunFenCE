@@ -1,0 +1,73 @@
+Open State List: unexamined states
+
+Closed State List: examined states
+
+State:
+- Cost from Start State: the whole cost led to this state from Start State: g(X)
+- Estimated Cost to Goal State: h(X)
+- Link to parent
+
+Given StartLoc, GoalLoc, AgentType
+
+1. Clear Open and Closed Lists
+
+2. create StartNode:
+   - StartNode.Loc = StartLoc
+   - StartNode.CostFromStart = 0
+   - StartNode.CostToGoal = EstimatedCost(StartLoc, GoalLoc, AgentType)
+   - StartNode.TotalCost = CostFromStart + CostToGoal
+   - StartNode.Parent = null
+   - StartNode.isInOpen = true
+   - StartNode.isInClose = false
+   
+3. Push StartNode --> Open List
+
+   if the Open State List is NOT empty
+4. while(false == Open.empty)
+  {
+    Pop Node with lowest g + h: pop up the node with the highest priority
+    
+    if(PopNode == GoalNode)
+    {
+      Construct Path from PopNode --> StartNode
+      
+      return success
+    }
+    
+    for(each SuccessorNode of PopNode)
+    {
+      the new cost of the current successor node is equal the cost of its parent node + the cost traversing from its parent
+      node to this node
+      NewCostFromStart = PopNode.CostFromStart + TraverseCode(PopNode, SuccessorNode, AgentType)
+      NewCostToGoal = EstimatedCost(SuccessorNode.Loc, GoalLoc, AgentType)
+      NewTotalCost = NewCostFromStart + NewCostToGoal
+      
+      by TWO cases, we need to put the current SuccessorNode into Open state List
+      a. if the SuccessorNode is NOT in Open and Closed List: have not touched before
+      b. if the NewCostFromStart + NewCostToGoal <= SuccessorNode.TotalCost: the current route is smarter than others
+      if((!SuccessorNode.isInOpen && !SuccessorNode.isInClose)
+         || !(NewTotalCost > SuccessorNode.TotalCost)
+        )
+      {
+        update current SuccessorNode
+        SuccessorNode.CostFromStart = NewCostFromStart
+        SuccessorNode.CostToGoal = NewCostToGoal
+        SuccessorNode.TotalCost = NewTotalCost
+        SuccessorNode.Parent = PopNode
+        SuccessorNode.isInClose = false : remove this node out of Closed List
+        
+        based on which state list this SuccessorNode is in
+        if(SuccessorNode.isInOpen)
+        {
+          the SuccessorNode is in Open List: update the open list according to the changing of cost of this SuccessorNode
+          UpdateOpenList() 
+        }
+        else
+        {
+          the SuccessorNode is in Closed List: add back this SuccessorNode to Open List
+          AddNode(OpenList, SuccessorNode)
+          SuccessorNode.isInOpen = true
+        }
+      }
+    }
+  }

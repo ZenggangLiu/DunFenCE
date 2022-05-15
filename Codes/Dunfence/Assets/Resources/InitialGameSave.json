@@ -1,0 +1,17 @@
+{
+  "IsPAU": false,
+  "Economy": {
+    "RP": 0,
+    "Coins": 0
+  },
+  "BoughtWeaponList": [
+    4,
+    14,
+    24,
+    34,
+    44,
+    54,
+    64,
+    74
+  ]
+}

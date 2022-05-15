@@ -1,0 +1,217 @@
+///////////////////////////////////////////////////////////////////////
+//                          Unity3D Notes                            //
+///////////////////////////////////////////////////////////////////////
+
+1. How to changed the created sln file name: something like DunFenCE.sln
+  - Quit Unity, rename the main folder, the one that contains Assets and co, and restart Unity. 
+  
+2. If we want to include some data files into the final build 
+  - put them into Assets\Resources
+  - read them with Resources.Load("Configure"); without the file extension
+
+3. Animator:
+  - can NOT like final state:like Dead to Exit: otherwise, you will get this sequence:
+    Final --> Default State
+  - NO add cycle onto default state: it does not behaviour at all
+  
+4. Start() method from MonoBehaviour will be called when the GameObject is enabled and at UNKNOWN time.
+   We can override and even change the access of Start(), Update() method:
+   public virtual void Start(). Then the Sub-Class can override this method:
+   #region PUBLIC OVERRIDDENS
+  /**
+   * Checking function: check if all needed components are available
+   * Awake() will be called when the script is initialized before game starts
+   * Awake() will be called only once during the lifetime of the script instance
+   * Awake() will be called after all objects are initialized
+   * Awake() will be called out of order: in random order
+   */
+  public virtual void Awake()
+  {
+
+  }
+
+  /**
+   * Initialize function
+   * Start() will be called exactly ONCE in the lifetime of the script
+   * Start() will be called in TWO cases:
+   * - Attached to any GameObject:
+   *   + Start() will be called when the script is ENABLED
+   * - Called directly from other code: 
+   *   + do the initialization
+   */
+	public virtual void Start()
+  {
+	
+	}
+	
+  /**
+   * Update function: called each frame
+   * Update() will be called every frame, if the script is ENBALED
+   * use Time.deltaTime to get the time elapsed from last Update() call
+   */
+	public virtual void Update()
+	{
+
+	}
+
+  /**
+   * Physical Update function: 50Hz or 0.02 second
+   * FixedUpdate() will be called at fixed frame-rate, if the script is ENABLED
+   * FixedUpdate() will be called at 50Hz: each 0.02 second
+   * use Time.deltaTime to get the delta time instead of Time.fixedDeltaTime, 
+   * because Time.deltaTime automatically returns the right delta time if you are inside a FixedUpdate() or Update()
+   */
+  public virtual void FixedUpdate()
+  {
+    
+  }
+
+  /**
+   * Post-Update function: called each frame after all Update() functions
+   * LateUpdate() will be called after ALL Update() functions called
+   */
+  public virtual void LateUpdate()
+  {
+    
+  }
+  #endregion // PUBLIC OVERRIDDENS
+  
+5. Collision Detection for Fast Moving Object NOT always working even if we are using Continuous Detection Mode:
+  - in each Update() we have to use RayCast to check collision and call the handler manually
+
+6. Unity does NOT have OBB Tree concept. If we want to make a similar OBB tree, JUST define a couple of Box Colliders within
+   different Bone Hierarchy
+   
+7. Better use SetParent() to set the Parent <--> Child relationship. If we use SetParent(ParentTrans, false), then the child
+   just set its parent without changing its own transform. Like in weapon case, all weapon's assets are stored in Local Space,
+   when we mount, we have to use SetParent(ParentTrans, false)
+   
+8. Animations FSM: Animator
+  - All ONE Time Animation MUST have
+    + use Trigger to trigger this animation
+    + onAnimationEnded() to tell the game logic about its completion
+    + ONE transition back to Idle state
+  - All LOOP Animation MUST have
+    + use Boolean Flag to trigger this animation
+    + Flag ON: play it
+    + Flag Off: pause it
+    + Defending Animation's Exit Transit can NOT have EXIT-TIME.
+  - Found some problem for any animator created for manually created animation: like the InfoPanelController of ShowInfoPanel animation:
+    + can NOT get the base layer within InfoPanelController and Animator.layerCount ALWAYS returns 0, even if Base Layer does EXIST 
+
+9: All Models MUST be imported WITHOUT Material. And depends on if they have animations, we will also switch off Rig and Animation import settings
+
+10. For NON-AR mode, we can switch on "Use micro mscorlib" stripe setting to get the minimal APK file size on Android
+
+11. We can NOT change the transform Parent for a Asset loaded with Resources.Load()
+
+12. How to JUST support LandScape modes(Right and Left):
+   - open Player Settings: Edit > Project Settings > Player
+   - click the Resolution and Presentation section and select Auto Rotation
+   - select LandScape Left and LandScape Right under the allowed orientation options
+   
+------- GUI ----------
+1. For GUI's interactive elements to work: button for example:
+  - Canvas MUST have Graphic Raycaster component
+  - there MUST be an EventSystem GameObject somewhere: can be attached under Canvas
+
+2. For GUI, we can get the Scaling Factor used in the current Screen Resolution from Canvas.scaleFactor.
+   NOT use CanvasScaler.scaleFactor, it will ALWAYS be 1.
+
+3. All GUI Icons MUST be in white colour, in order to give them an adjustable colour using Image's colour property
+
+4. GUI animation within Unity is doggy. We have to code it in order to implement a Above Shifting Animation.
+  + Disable "Elastic" Mode. Select "Unrestricted" in Movement Type. Otherwise, the content is ALWAYS shaking
+  + for that Shifting Above animation, we the Scroll Rect has reached End, Unity will reset its Rect Transform to 0,0
+  
+------- Vuforia AR ----------
+1. Player Settings: we can NOT use Automatic Graphic API: Vuforia JUST supports GLES 2.0
+   - use "Forward" for the Rendering Path.
+   - explicitly select GLES 2.0. Turn off Automatic for Graphics API. Vuforia doesn't support iOS Metal or OpenGL ES 3.0.
+   - on Android, use ARMv7. 
+     A device may have an Intel chip, but Vuforia needs to be compiled with ARMv7 and the device can attempt to use ARM emulation to run it.
+   - disable "Stripping Level". it will cause crash
+   - ref: https://developer.vuforia.com/forum/faq/unity-player-settings
+   
+2. Vuforia AR API
+   - Preserve child size Option of Image Target Behaviour:
+     + checked: any children of this target maintain their size when the image target is in a different size
+     + unchecked: the child objects will resize to match the new target scale
+     
+3. In AR, we are using 1cm as base unit. But Lighting system can NOT handle so tiny unit, we have to scale whole scene up 10 time: 10cm as least to make lighting
+    system calculate shadows and lighting affected areas.
+
+4. We can NOT use Stripe in player's setting
+
+5. Tick: Keep AR Camera Alive and Keep Trackable Prefab Alive, in order to use the SAME AR Camera during different Game Level Scene
+   - If we reload and destroy the ARScene each time, when we load a game level, ARCamera will be re-created each time.
+
+6. Tick Enable Extended Track within the Image Target Behaviour, in order to show the Game Level Scene, if the marker
+is out of the Camera View
+
+------- Unity Ads -----------
+1. visit https://dashboard.unityads.unity3d.com/ and create a NEW game
+2. set rewardedVideo as the default Zone ID
+3. open Unity Editor and go to Window/Services Panel
+4. link the current project with pre-defined organisation
+5. turn ADS support
+6. NOTE: unity Ads just provides Video there is NO banner or interstitials: use Google AdMob instead
+
+-------- Google Ads ---------
+1. needs Android SDK 3.2 or higher
+2. needs Google Play services 7.5 or higher: open Android SDK Manager, go to Extras section
+3. needs Android Support Repository
+4. needs Google Play Services
+5. needs Google Repository
+6. click Assets/Google Play Services/Resolve Client Jars
+7. get test device ID: 
+   + navigate to Android SDK platform-tools/ directory and execute: adb logcat > log.txt
+     search for something like: Use AdRequest.Builder.addTestDevice("1C546D4B0866632471F7C345FFF1EF0B") to get test ads on this device.
+
+--------- Google IAP: In Application Billing ---------
+1. need to upload and publish APK into Alpha or Beta environment
+2. add IAP item from In-app Products section
+3. add IAP tester account(NO real money deduction) in Settings/LICENSE TESTING
+4. during IAP purchase, the user still needs to provide credit card or paypal detail
+
+
+--------- Optimization ---------
+1. Static Objects Batching: use Mesh Baker to combine them
+   - Combine their textures into one ATLAS
+   - Combine their mesh into one giant mesh
+     + stored as a Scene Object. NOT stored in place, otherwise, Mesh Backer will store each mesh separately
+   
+2. Dynamic Object Batching: NON-Skinned Movable Objects
+   - enable Dynamic Batching in the Player settings
+   - use Mesh Backer to combine textures of all dynamic objects into ATLAS
+   - recreate a mesh for each dynamic object with Mesh Baker: stored in place: generate a new asset mesh file using the new UV
+     + BUT still need the original FBX file to address that Avatar configure for Skinned Objects
+   - make sure each dynamic object have at most 900 vertex attributes
+     + each vertex attribute type takes one slot in that 900 slots: pos, uv0, uv1, boneweight, boneindex, tangent, normal,...
+   - NO Batching for Skinned Geometry
+   
+3. Particle Effect Batching:
+   - NO use animated Sprite-Sheet based effect
+     + even if it just use ONE emitted particle
+     + BUT consumes TOO much memory. Downscaling will blur that effect horribly
+   - try to keep each effect having ONE SINGLE emitter(particle system component): maximal TWO emitters
+     + Unity will combine all emitted particles from the same emitter together
+   - use world space particle: simulation space SET to world
+   - turn off Play on Awake in particle's inspector panel
+   - set applyShapeToPosition to true in EmitParams
+   - set the expected spawn world space in position of EmitParams
+   - use code ParticleSystem.Emit(EmitParams, particle_count) to emit new particles in world space
+
+4. Mobile ChipSets are often fill-bound: the cost of filling pixels can be the most expensive part of the frame.
+   - NO Multi-Pass Shader, Per-Pixel Lighting(Default Specular Shader, with Pixel Light Count to ONE)
+   - Small Transparent Objects
+   - Never use Alpha Test Shader: Unity CoutOut Shader
+     + Alpha Test, Clip and Fragment Discard Operations force some common mobile GPUs to opt out of
+       certain hardware fill optimizations, making it extremely slow
+     + Stick Opaque Geometry or Alpha-to-Coverage for CoutOuts
+     
+5. NO string concatenation: it just create a lot of temporary string instances, which will cause a lot of GC: Garbage Collection 
+   - All log for debug information MUST be guided by #define macro
+   
+https://developer3.oculus.com/blog/squeezing-performance-out-of-your-unity-gear-vr-game/
+   

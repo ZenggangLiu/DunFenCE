@@ -1,0 +1,101 @@
+{
+  "GameConfig": {
+    "DeviceInput": {
+      "TapKeyA": {
+        "Keyboard": "LeftControl",
+        "Mouse": "Mouse0",
+        "Joystick": "JoystickButton0"
+      },
+      "TapKeyB": {
+        "Keyboard": "LeftShift",
+        "Mouse": "Mouse1",
+        "Joystick": "JoystickButton1"
+      },
+      "TapKeyC": {
+        "Keyboard": "LeftAlt",
+        "Mouse": "Mouse2",
+        "Joystick": "JoystickButton2"
+      },
+      "LeftKey": {
+        "IsPosDir": false,
+        "Keyboard": {
+          "Name": "Horizontal",
+          "Sensitivity": 0,
+          "ScaleValue": 1
+        },
+        "Mouse": {
+          "Name": "Mouse X",
+          "Sensitivity": 0.5,
+          "ScaleValue": 1
+        },
+        "Joystick": {
+          "Name": "Horizontal",
+          "Sensitivity": 0.1,
+          "ScaleValue": 1
+        }
+      },
+      "RightKey": {
+        "IsPosDir": true,
+        "Keyboard": {
+          "Name": "Horizontal",
+          "Sensitivity": 0,
+          "ScaleValue": 1
+        },
+        "Mouse": {
+          "Name": "Mouse X",
+          "Sensitivity": 0.5,
+          "ScaleValue": 1
+        },
+        "Joystick": {
+          "Name": "Horizontal",
+          "Sensitivity": 0.1,
+          "ScaleValue": 1
+        }
+      },
+      "UpKey": {
+        "IsPosDir": true,
+        "Keyboard": {
+          "Name": "Vertical",
+          "Sensitivity": 0,
+          "ScaleValue": 1
+        },
+        "Mouse": {
+          "Name": "Mouse Y",
+          "Sensitivity": 0.5,
+          "ScaleValue": 1
+        },
+        "Joystick": {
+          "Name": "Vertical",
+          "Sensitivity": 0.1,
+          "ScaleValue": 1
+        }
+      },
+      "DownKey": {
+        "IsPosDir": false,
+        "Keyboard": {
+          "Name": "Vertical",
+          "Sensitivity": 0,
+          "ScaleValue": 1
+        },
+        "Mouse": {
+          "Name": "Mouse Y",
+          "Sensitivity": 0.5,
+          "ScaleValue": 1
+        },
+        "Joystick": {
+          "Name": "Vertical",
+          "Sensitivity": 0.1,
+          "ScaleValue": 1
+        }
+      }
+    },
+    "TouchEvent": {
+      "Swipe": {
+        "Sensitivity": 5
+      }
+    },
+    "TiltEvent": {
+      "Sensitivity": 0.015
+    }
+  }
+}

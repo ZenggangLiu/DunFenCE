@@ -1,0 +1,56 @@
+{
+  "MonsterDropOff": {
+    "TotalSlotCount": 180,
+    "Distribution": [
+      {
+        "ID": 180,
+        "SlotCount": 5
+      },
+      {
+        "ID": 184,
+        "SlotCount": 15
+      },
+      {
+        "ID": 188,
+        "SlotCount": 10
+      },
+      {
+        "ID": 200,
+        "SlotCount": 35
+      },
+      {
+        "ID": 204,
+        "SlotCount": 20
+      }
+    ]
+  },
+  "BossDropOff": {
+    "TotalSlotCount": 94,
+    "Distribution": [
+      {
+        "ID": 176,
+        "SlotCount": 2
+      },
+      {
+        "ID": 180,
+        "SlotCount": 5
+      },
+      {
+        "ID": 184,
+        "SlotCount": 22
+      },
+      {
+        "ID": 188,
+        "SlotCount": 10
+      },
+      {
+        "ID": 200,
+        "SlotCount": 35
+      },
+      {
+        "ID": 204,
+        "SlotCount": 20
+      }
+    ]
+  }
+}

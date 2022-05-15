@@ -1,0 +1,11 @@
+{
+  "ItemList": [
+    {
+      "ID": 1234,
+      "StoreID": "com.trisogame.coinchest",
+      "Consumable": true,
+      "SpriteName" : "CoinChest",
+      "GainedCoinAmount" : 2500
+    }
+  ]
+}
